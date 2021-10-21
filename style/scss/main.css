@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  color: #fff;
+}
+
+body {
+  background: #023047;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+@media screen and (max-width: 764px) {
+  main {
+    width: 100%;
+    padding: 0 1.5em;
+  }
+}
+
+div {
+  width: 80%;
+  max-width: 500px;
+  padding: 2em 0;
+}
+
+.item-box {
+  width: 80%;
+  max-width: 500px;
+  padding: 1em 0;
+  border: 2px solid white;
+}
+
+.list-item {
+  margin: 1em;
+  padding: 0.3em;
+  border-bottom: 1px solid white;
+}
+
+#input, #input:target {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  height: 2.5em;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  border: none;
+  font-size: 1em;
+  outline: none;
+}
+
+#addBtn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 7em;
+  height: 2.5em;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #FFB703;
+  border: none;
+  border-radius: 2em;
+  float: right;
+}
+/*# sourceMappingURL=main.css.map */

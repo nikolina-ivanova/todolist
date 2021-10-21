@@ -1,0 +1,24 @@
+//style input and btn
+@mixin input-style($width: auto, $border-radius: 0, $border: 0.5px solid var(--dark-color)) {
+    width: $width;
+    height: 2.8em;
+    padding: 0.5em 1em;
+    border-radius: $border-radius;
+    border: $border;
+}
+
+//style flex items
+@mixin flex-item($direction: row,$align: center, $justify: center, $max-width: 500px) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    width: 100%;
+    padding: 0 1.5em;
+    max-width: $max-width;
+}
+
+
+// @mixin box-width() {
+//     width: 100%;
+// }

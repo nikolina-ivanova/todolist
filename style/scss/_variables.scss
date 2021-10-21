@@ -1,0 +1,24 @@
+html {
+    --bg: #fafafa;
+    --text-color: #333;
+    --accent-color-orange: #FB8500;
+    --accent-color-blue: #219EBC;
+    --dark-color: #1f1f1f;
+    --light-color: #fff; 
+}
+
+html[data-theme='dark'] {
+    --bg: #333;
+    --text-color: #fafafa;
+    --dark-color: #fff;
+    --light-color: #1f1f1f;
+    --accent-color-blue: #FB8500;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text-color);
+}
+
+
+

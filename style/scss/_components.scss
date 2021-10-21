@@ -1,0 +1,53 @@
+.item-box {
+    border: 1px solid var(--dark-color);
+}
+.list-item {
+    margin: 1em;
+    padding: 0.3em;
+    border-bottom: 0.5px solid var(--dark-color);
+}
+
+//Lignt|Dark Mode toggle
+input[type="checkbox"] {
+    position: relative;
+    width: 32px;
+    height: 16px;
+    appearance: none;
+    background-color: var(--accent-color-blue);
+    border-radius: 50px;
+}
+input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: var(--light-color);
+    transform: scale(0.9);
+    left: 0;
+    transition: left 0.5s;
+}
+input:checked[type="checkbox"]:before{
+    left: 16px;
+}
+
+//INPUT
+.input-box{
+    width: 100%;
+}
+
+#input {
+    @include input-style(80%, 2em 0 0 2em);
+    border-right: none;
+}
+
+#addBtn {
+    @include input-style(20%, 0 2em 2em 0, none);
+    float: right;
+    background-color: var(--accent-color-blue);
+    color: var(--light-color);
+    &:hover{
+         background-color: var(--accent-color-orange);
+         transition: 0.2s background-color; //only on hover
+    }
+}
