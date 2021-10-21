@@ -8,7 +8,7 @@
 }
 
 //style flex items
-@mixin flex-item($direction: row,$align: center, $justify: center, $max-width: 500px) {
+@mixin flex-item($direction: row,$align: center, $justify: center, $max-width: 700px) {
     display: flex;
     flex-direction: $direction;
     align-items: $align;
@@ -17,8 +17,3 @@
     padding: 0 1.5em;
     max-width: $max-width;
 }
-
-
-// @mixin box-width() {
-//     width: 100%;
-// }

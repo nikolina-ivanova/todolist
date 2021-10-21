@@ -5,6 +5,7 @@ html {
     --accent-color-blue: #219EBC;
     --dark-color: #1f1f1f;
     --light-color: #fff; 
+    --dark-dark: #1f1f1f;
 }
 
 html[data-theme='dark'] {
@@ -13,6 +14,7 @@ html[data-theme='dark'] {
     --dark-color: #fff;
     --light-color: #1f1f1f;
     --accent-color-blue: #FB8500;
+    --accent-color-orange: #219EBC;
 }
 
 body{

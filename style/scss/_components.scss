@@ -1,34 +1,52 @@
 .item-box {
-    border: 1px solid var(--dark-color);
+    width: 100%;
 }
 .list-item {
     margin: 1em;
     padding: 0.3em;
-    border-bottom: 0.5px solid var(--dark-color);
+    border-bottom: 0.5px solid var(--dark-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
 }
 
-//Lignt|Dark Mode toggle
-input[type="checkbox"] {
-    position: relative;
-    width: 32px;
-    height: 16px;
-    appearance: none;
-    background-color: var(--accent-color-blue);
-    border-radius: 50px;
-}
-input[type="checkbox"]:before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 16px;
-    background-color: var(--light-color);
-    transform: scale(0.9);
-    left: 0;
-    transition: left 0.5s;
-}
-input:checked[type="checkbox"]:before{
-    left: 16px;
+nav .nav-items{
+    @include flex-item(row, center, space-between);
+
+    //Lignt|Dark Mode toggle
+    input[type="checkbox"] {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        appearance: none;
+        background-color: var(--accent-color-blue);
+        border-radius: 50px;
+    }
+    input[type="checkbox"]:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 16px;
+        background-color: var(--light-color);
+        transform: scale(0.9);
+        left: 0;
+        transition: left 0.5s;
+    }
+    input:checked[type="checkbox"]:before{
+        left: 20px;
+    }
+
+    .nav-links a{
+        margin-right: 2em;
+        padding: 0.2em;
+        cursor: pointer;
+
+        &.active{
+            border-bottom: 1px solid var(--accent-color-blue);
+        }
+    }
 }
 
 //INPUT
@@ -40,14 +58,30 @@ input:checked[type="checkbox"]:before{
     @include input-style(80%, 2em 0 0 2em);
     border-right: none;
 }
-
+//add btn
 #addBtn {
     @include input-style(20%, 0 2em 2em 0, none);
     float: right;
     background-color: var(--accent-color-blue);
     color: var(--light-color);
+    cursor: pointer;
     &:hover{
          background-color: var(--accent-color-orange);
          transition: 0.2s background-color; //only on hover
     }
 }
+//remove btn
+
+    li button {
+        background-color: var(--accent-color-blue);
+        color: var(--light-color);
+        padding: 0.5em 0.7em;
+        border-radius: 2em;
+        font-size: 0.8em;
+        cursor: pointer;
+
+        &:hover{
+            background-color: var(--accent-color-orange);
+            transition: 0.2s background-color;
+        }
+    }

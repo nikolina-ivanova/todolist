@@ -13,11 +13,8 @@ nav{
     position: sticky;
     top: 0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.164);
-    padding: 0
-}
-
-nav .nav-items{
-    @include flex-item(row, center, space-between);
+    padding: 0;
+    height:  50px;
 }
 
 main {

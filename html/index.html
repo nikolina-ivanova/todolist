@@ -10,7 +10,12 @@
 <body>
     <nav>
         <div class="nav-items">  
-            <h1>Today</h1> 
+            <div class="nav-links">
+                <a class="active">Today</a> 
+                <a>Week</a>
+                <a>Month</a>
+            </div>
+
             <input type="checkbox" id="switch" onclick="toggleMode()"/>
         </div>
     </nav>
@@ -22,23 +27,9 @@
             <button id="addBtn">Add</button>
         </div>
 
-        <ul class="item-box">
-            <li class="list-item">item 1</li>
-            <li class="list-item">next item is 2</li>
-            <li class="list-item">3</li>
-            <li class="list-item">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio officia nisi dolorum odit qui voluptates vitae nulla a optio.
-            </li>
-            <li class="list-item">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro harum, neque, esse explicabo sed eaque doloremque saepe sint, dolor maxime officia incidunt fugit et! Doloremque, dolorem illo. Doloribus aliquid aliquam at, ducimus, reprehenderit accusantium tempora nisi, facilis deserunt dolore minima. Eius reiciendis a blanditiis doloribus aperiam, et explicabo totam tenetur earum at repellat molestiae ex consequuntur porro numquam aspernatur rerum quaerat pariatur harum sapiente odio commodi minima perspiciatis? Deserunt, optio, sunt maiores, ex distinctio saepe corporis dicta enim molestias odit praesentium necessitatibus dolorum obcaecati? Tempore repellat quisquam doloremque, cupiditate voluptatem sapiente deleniti autem explicabo asperiores iure et nostrum, ex facere.
-            </li>
-            <li class="list-item">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio officia nisi dolorum odit qui voluptates vitae nulla a optio.
-            </li>
-            <li class="list-item">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro harum, neque, esse explicabo sed eaque doloremque saepe sint, dolor maxime officia incidunt fugit et! Doloremque, dolorem illo. Doloribus aliquid aliquam at, ducimus, reprehenderit accusantium tempora nisi, facilis deserunt dolore minima. Eius reiciendis a blanditiis doloribus aperiam, et explicabo totam tenetur earum at repellat molestiae ex consequuntur porro numquam aspernatur rerum quaerat pariatur harum sapiente odio commodi minima perspiciatis? Deserunt, optio, sunt maiores, ex distinctio saepe corporis dicta enim molestias odit praesentium necessitatibus dolorum obcaecati? Tempore repellat quisquam doloremque, cupiditate voluptatem sapiente deleniti autem explicabo asperiores iure et nostrum, ex facere.
-            </li>
-        </ul>    
+        <!-- Todo List Items -->
+        <ul class="item-box"></ul>    
+
     </main>
     <script src="../js/main.js"></script>
 </body>
